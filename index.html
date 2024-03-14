@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+    <link rel="shortcut icon" href="#" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+        <style>
+            #result{
+                display: none;
+            }
+        </style>
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Dictionary App</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form id="search-form">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter a word" id="search-input" />
+                        <button class="btn btn-primary" role="button" id="search-button">
+                            Search
+                        </button>
+                    </div>
+                </form>
+                <div id="result">
+                    <div class="card mt-3 d-flex flex-column p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="h1" id="card-title">Black</div>
+                            <audio src=""></audio>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="audio" width="30" height="30"
+                                fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z" />
+                                <path
+                                    d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z" />
+                                <path
+                                    d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11" />
+                            </svg>
+                        </div>
+                        <div class="d-flex gap-1 text-muted">
+                            <p class="partOfSpeech">adjective</p>
+                            <p class="phonetic">/blak/</p>
+                        </div>
+                        <div class="h6 border-start border-primary border-3 p-1 definition">The colour/color perceived
+                            in
+                            the absence of light, but also when no
+                            light is reflected, but rather absorbed.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- Add Bootstrap JS -->
