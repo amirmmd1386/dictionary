@@ -10,7 +10,7 @@ const cardTitle = document.getElementById('card-title')
 btn.addEventListener('click', (e) => {
     e.preventDefault()
     if (searchInput) {
-        fetch(`http://api.dictionaryapi.dev/api/v2/entries/en/${searchInput.value}`)
+        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchInput.value}`)
             .then(res => res.json())
             .then(data => {
                 let d = data[0]
